@@ -36,7 +36,7 @@ public class ApplicationContextSameBeanFindTest {
     }
 
     @Test
-    @DisplayName("특정 타입을 모듀 조회하기")
+    @DisplayName("특정 타입을 모듈 조회하기")
     void findAllBeanByType(){
         Map<String, MemberRepository> beansOfType = ac.getBeansOfType(MemberRepository.class);
         for (String key : beansOfType.keySet()) {
